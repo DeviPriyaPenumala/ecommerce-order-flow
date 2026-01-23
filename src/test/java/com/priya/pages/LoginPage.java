@@ -9,6 +9,7 @@ public class LoginPage {
         By username = By.id("user-name");
 	    By password = By.id("password");
 	    By loginBtn = By.id("login-button");
+	    By ErrorMessage=By.cssSelector("h3[data-test='error']");
 
 	    public LoginPage(WebDriver driver) {
 	        this.driver = driver;
@@ -18,8 +19,16 @@ public class LoginPage {
 	        driver.findElement(username).sendKeys(user);
 	        driver.findElement(password).sendKeys(pass);
 	        driver.findElement(loginBtn).click();
-	    }
+	        }
+	    
+	    
+	    public boolean InvalidCredentialsErrorMessageDisplayed() {
+			  return  driver.findElement(ErrorMessage).isDisplayed();
+			   
+		   }
 	}
+
+
 
 
 

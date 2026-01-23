@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Suite">
+
+    <listeners>
+        <listener class-name="com.priya.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="com.priya.tests.AddToCartTest"/>
+        </classes>
+    </test>
+
+</suite>
