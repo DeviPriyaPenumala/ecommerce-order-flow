@@ -4,9 +4,15 @@ This repository contains a Selenium-based automation framework developed to vali
 
 ---
 
+
+
 ## 🔹 Project Overview
 
-The primary objective of this project is to design a scalable and maintainable automation framework that automates critical functionalities of an eCommerce application, starting from user login and extendable up to checkout and order confirmation.
+The Ecommerce Order Flow Automation Framework is designed to automate and validate critical end-to-end user journeys of an eCommerce application using Selenium WebDriver.  
+
+This framework focuses on building a **scalable, maintainable, and reusable automation solution** that follows industry best practices such as Page Object Model (POM), centralized test management, and detailed execution reporting.  
+
+The project currently automates core business flows including login, product selection, checkout, and order confirmation, and is structured to support future enhancements such as data-driven testing, CI/CD integration, and BDD.
 
 **Application Under Test:**  
 https://www.saucedemo.com/
@@ -25,23 +31,47 @@ https://www.saucedemo.com/
 
 ---
 
+## 🔹 Project Highlights
+
+- End-to-end automation of key eCommerce user flows  
+- Designed using **Page Object Model (POM)** for better readability and maintainability  
+- Centralized browser setup and teardown using **TestNG annotations**  
+- Modular and reusable test architecture  
+- **Extent Reports integration using TestNG listeners** for detailed and user-friendly execution reports  
+- Maven-based project structure for efficient dependency and build management  
+- Easily extensible framework to support data-driven testing, CI execution, and BDD 
+- Framework designed with real-world automation and enterprise project standards in mind  
+ 
+---
+
 ## 🔹 Framework Design Approach
 
 - Implemented **Page Object Model (POM)** for better maintainability and reusability  
 - Centralized browser initialization and teardown using TestNG annotations  
 - Clear separation of test logic and page-level actions  
 - Maven used for dependency and build management  
+- Implemented **Extent Reports using TestNG listeners** for detailed execution reporting  
 
 ---
 
-## 🔹 Current Features
+## 🔹 Key Features
 
-- Automated login functionality  
-- Browser setup and cleanup handled through a base test class  
+- Automated end-to-end eCommerce user flow  
+- Login, add-to-cart, checkout, and order confirmation scenarios  
 - Clean and modular test design  
-- Maven dependency management  
+- Reusable base test and utility classes  
+- **Extent Reports integration for detailed test execution insights**  
 
 ---
+
+## Test Scenarios Automated
+- Login functionality
+- Add product to cart
+- Checkout process
+- Order confirmation
+
+---
+
 ## 🔹 How to Execute Tests
 
 1. **Clone the repository**
@@ -80,5 +110,14 @@ https://www.saucedemo.com/
   - Right-click on the test file
 
   - Select Run As → TestNG Test
+  
+ 
+
+
+## 🔹 Future Enhancements
+
+- Data-Driven Testing using external data sources  
+- CI integration using Jenkins  
+- BDD support using Cucumber  
   
   
