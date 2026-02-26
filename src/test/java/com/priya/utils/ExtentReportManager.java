@@ -10,7 +10,7 @@ public class ExtentReportManager {
     public static ExtentReports getExtentReport() {
         if (extent == null) {
             ExtentSparkReporter reporter =
-                new ExtentSparkReporter("test-output/ExtentReport.html");
+                new ExtentSparkReporter("target/ExtentReport.html");
 
             reporter.config().setReportName("Automation Test Report");
             reporter.config().setDocumentTitle("E-Commerce Automation");

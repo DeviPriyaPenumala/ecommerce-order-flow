@@ -20,7 +20,7 @@ public class ScreenshotUtils {
         }
 
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String screenshotDir = System.getProperty("user.dir") + "/test-output/screenshots/";
+        String screenshotDir = System.getProperty("user.dir") + "/target/screenshots/";
         String screenshotPath = screenshotDir + testName + "_" + timestamp + ".png";
 
         try {
